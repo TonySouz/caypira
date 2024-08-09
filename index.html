@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Caypira</title>
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-center py-4">
+            <img src="img/dados.png" style="width: 80px; height: 80px;" alt="Caypira Logo">
+        </div>
+        <h1 class="text-center">Caypira</h1>
+        <h5 class="text-center">Seu site de apostas.</h5>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#apostas">Apostas</a>
+                </li>
+                <li class="nav-item" id="login-link">
+                    <a class="nav-link" href="#login">Login</a>
+                </li>
+                <li class="nav-item d-none" id="user-info">
+                    <span class="nav-link" id="user-name"></span>
+                    <span class="nav-link" id="user-balance"></span>
+                    <a class="nav-link" href="#" id="logout-link">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <section id="apostas" class="py-5">
+                        <h2>Apostas</h2>
+                        <div class="btn-group d-flex flex-wrap" role="group" aria-label="Apostas">
+                            <button type="button" class="btn btn-secondary mb-2">1</button>
+                            <button type="button" class="btn btn-secondary mb-2">2</button>
+                            <button type="button" class="btn btn-secondary mb-2">3</button>
+                            <button type="button" class="btn btn-secondary mb-2">4</button>
+                            <button type="button" class="btn btn-secondary mb-2">5</button>
+                            <button type="button" class="btn btn-secondary mb-2">6</button>
+                            <button type="button" class="btn btn-success mb-2">Jogar!</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-6" id="login-section">
+                    <section id="login" class="py-5">
+                        <h3>Login</h3>
+                        <form id="login-form">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-md-6 d-none" id="user-section">
+                    <section class="py-5">
+                        <h3>Bem-vindo, <span id="user-name-display"></span>!</h3>
+                        <p>Saldo: <span id="user-balance-display"></span></p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Caypira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
